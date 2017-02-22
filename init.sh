@@ -82,3 +82,5 @@ fi
 #install vim plugins
 vim +PluginInstall +qall
 
+#source .bash_profile
+source ~/.bash_profile
