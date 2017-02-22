@@ -47,8 +47,8 @@ if [ -e "~/.bash_profile" ]; then
         echo "wrong input, ignored."
     fi
 else
-    echo "copying .tmux.conf"
-    cp ./.tmux.conf ~/.tmux.conf
+    echo "copying .bash_profile"
+    cp ./.bash_profile ~/.bash_profile
 fi
 
 #test if .vimrc exsists
@@ -70,8 +70,8 @@ if [ -e "~/.vimrc" ]; then
         echo "wrong input, ignored."
     fi
 else
-    echo "copying .tmux.conf"
-    cp ./.tmux.conf ~/.tmux.conf
+    echo "copying .vimrc"
+    cp ./.vimrc ~/.vimrc
 fi
 
 #test if Vundle installed
