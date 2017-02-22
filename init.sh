@@ -5,7 +5,7 @@ set -e #stop on error
 ans=""
 
 #test if .tmux.conf exsists
-if [ -e "~/.tmux.conf" ]; then
+if [ -e ~/.tmux.conf ]; then
     echo ".tmux.conf already exsists. Do you want to replace it?"
     read -p "(y/n): " ans
     if [ ${ans} = "y" ]; then
@@ -29,7 +29,7 @@ fi
 
 
 #test if .bash_profile exsists
-if [ -e "~/.bash_profile" ]; then
+if [ -e ~/.bash_profile ]; then
     echo ".bash_profile already exsists. Do you want to replace it?"
     read -p "(y/n): " ans
     if [ ${ans} = "y" ]; then
@@ -52,7 +52,7 @@ else
 fi
 
 #test if .vimrc exsists
-if [ -e "~/.vimrc" ]; then
+if [ -e ~/.vimrc ]; then
     echo ".vimrc already exsists. Do you want to replace it?"
     read -p "(y/n): " ans
     if [ ${ans} = "y" ]; then
