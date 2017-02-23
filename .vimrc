@@ -22,6 +22,7 @@ inoremap [ []<ESC>i
 inoremap ' ''<ESC>i
 inoremap " ""<ESC>i
 set backspace=indent,eol,start
+autocmd FileType markdown setlocal spell
 
 
 set nocompatible              " be iMproved, required
