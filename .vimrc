@@ -22,6 +22,8 @@ inoremap jk <ESC>
 "inoremap ' ''<ESC>i
 "inoremap " ""<ESC>i
 set backspace=indent,eol,start
+autocmd FileType markdown setlocal spell
+
 if exists('g:loaded_pairify')
     finish
 endif
