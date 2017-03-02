@@ -15,9 +15,9 @@ set foldcolumn=1
 set foldlevel=5
 syntax on
 inoremap jk <ESC>
+inoremap aa <C-n>
 "inoremap {<CR> {<CR>}<ESC>ko
 "inoremap ( ()<ESC>i
-"inoremap aa <C-n>
 "inoremap [ []<ESC>i
 "inoremap ' ''<ESC>i
 "inoremap " ""<ESC>i
