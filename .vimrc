@@ -13,6 +13,7 @@ set foldenable
 set foldmethod=indent
 set foldcolumn=1
 set foldlevel=5
+set showcmd
 syntax on
 inoremap jk <ESC>
 inoremap aa <C-n>
