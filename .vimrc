@@ -24,6 +24,8 @@ inoremap aa <C-n>
 "inoremap " ""<ESC>i
 set backspace=indent,eol,start
 autocmd FileType markdown setlocal spell
+highlight PmenuSel   ctermfg=22 ctermbg=16 guifg=darkgreen guibg=black
+
 if exists('g:loaded_pairify')
     finish
 endif
@@ -147,3 +149,4 @@ let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
 let g:neocomplete#sources#syntax#min_keyword_length = 3
 let g:neocomplete#enable_auto_select = 1
+
