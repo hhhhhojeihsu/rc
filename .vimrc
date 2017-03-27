@@ -17,7 +17,7 @@ set showcmd
 syntax on
 inoremap jk <ESC>
 inoremap aa <C-n>
-"inoremap {<CR> {<CR>}<ESC>ko
+inoremap {<CR> {<CR>}<ESC>ko
 "inoremap ( ()<ESC>i
 "inoremap [ []<ESC>i
 "inoremap ' ''<ESC>i
@@ -143,6 +143,8 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
 
 "neocomplete
 let g:neocomplete#enable_at_startup = 1
