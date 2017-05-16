@@ -2,24 +2,11 @@ bind "set completion-ignore-case on"
 bind "set show-all-if-ambiguous on"
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
+export export TERM=screen-256color
 PS1='\[\033[1;36m\]\u\[\033[1;31m\]@\[\033[1;32m\]\h:\[\033[1;35m\]\w\[\033[1;31m\]\$\[\033[0m\] '
 alias ll='ls -alGF | less'
 alias ls='ls -GFh'
 alias dir='ls'
 alias grep='grep --color=auto'
 alias cls='clear'
-alias sshos='ssh 573b48b189f5cf953a000160@nodejs-wwwworkspace.rhcloud.com'
-alias sshcs='ssh hchsu0426@linux3.cs.nctu.edu.tw'
-alias sshdlab1='ssh -X 2016dlab58@140.113.208.231'
-alias sshdlab2='ssh -X 2016dlab58@140.113.208.230'
-alias sshdlab3='ssh -X 2016dlab58@140.113.208.228'
-alias sshbsd1='ssh hchsu0426@bsd1.cs.nctu.edu.tw'
-alias sshbsd2='ssh hchsu0426@bsd2.cs.nctu.edu.tw'
-alias sshbsd3='ssh hchsu0426@bsd3.cs.nctu.edu.tw'
-alias sshbsd4='ssh hchsu0426@bsd4.cs.nctu.edu.tw'
-alias sshbsd5='ssh hchsu0426@bsd5.cs.nctu.edu.tw'
-alias sshlinux1='ssh hchsu0426@linux1.cs.nctu.edu.tw'
-alias sshlinux2='ssh hchsu0426@linux2.cs.nctu.edu.tw'
-alias sshlinux3='ssh hchsu0426@linux3.cs.nctu.edu.tw'
-alias sshlinux4='ssh hchsu0426@linux4.cs.nctu.edu.tw'
-alias sshlinux5='ssh hchsu0426@linux5.cs.nctu.edu.tw'
+alias tmux='tmux -2'
