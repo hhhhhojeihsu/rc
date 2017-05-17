@@ -79,8 +79,19 @@ if [ ! -d ~/.vim/bundle/Vundle.vim ]; then
     git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 fi
 
+#test if tpm installed
+if [ ! -d ~/.tmux/plugins/tpm ]; then
+	git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+fi
+
 #install vim plugins
 vim +PluginInstall +qall
 
 #source .bash_profile
 source ~/.bash_profile
+
+#source .tmux.conf
+tmux source ~/.tmux.conf
+
+echo "Rember to `tmux` and then `<prefix> + I` to install tmux plugins"
+

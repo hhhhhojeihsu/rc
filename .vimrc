@@ -55,7 +55,7 @@ cnoreabbrev W w
 cnoreabbrev Q q
 noremap YY "+y<CR>
 noremap PP "+p<CR>
-
+inoremap {<CR> {<CR>}<ESC>ko
 
 "*****************************************************************************
 "" Autocmd Rules
@@ -110,6 +110,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'Shougo/neosnippet'
 Plugin 'Shougo/neosnippet-snippets'
 Plugin 'Shougo/neocomplete.vim'
+Plugin 'frioux/vim-lost'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -231,3 +232,6 @@ let g:neocomplete#enable_smart_case = 1
 let g:neocomplete#sources#syntax#min_keyword_length = 3
 let g:neocomplete#enable_auto_select = 1
 
+"vim-easy-align
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
