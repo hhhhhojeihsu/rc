@@ -93,5 +93,5 @@ source ~/.bash_profile
 #source .tmux.conf
 tmux source ~/.tmux.conf
 
-echo "Rember to `tmux` and then `<prefix> + I` to install tmux plugins"
-
+#install tmux plugins
+~/.tmux/plugins/tpm/scripts/install_plugins.sh
