@@ -58,6 +58,15 @@ noremap YY "+y<CR>
 noremap PP "+p<CR>
 inoremap {<CR> {<CR>}<ESC>ko
 
+if ! has('gui_running')
+  set ttimeoutlen=10
+  augroup FastEscape
+    autocmd!
+    au InsertEnter * set timeoutlen=100
+    au InsertLeave * set timeoutlen=1000
+  augroup END
+endif
+
 "*****************************************************************************
 "" Autocmd Rules
 "*****************************************************************************
