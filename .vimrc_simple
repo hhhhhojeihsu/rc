@@ -1,0 +1,87 @@
+"indent
+set ai
+set expandtab
+set tabstop=4
+set shiftwidth=4
+
+"encoding
+set fileencodings=utf-8,big5
+
+"search
+set hls
+set incsearch
+set ignorecase
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+"color
+set bg=dark
+highlight PmenuSel   ctermfg=22 ctermbg=16 guifg=darkgreen guibg=black
+
+"folding
+set foldenable
+set foldmethod=indent
+set foldcolumn=1
+set foldlevel=5
+
+"misc
+set cursorline
+set mouse=nv
+set ruler
+set number
+set showcmd
+set bomb
+set binary
+set ttyfast
+syntax on
+inoremap jk <ESC>
+inoremap aa <C-n>
+nmap <s-tab> v<
+set backspace=indent,eol,start
+autocmd FileType markdown setlocal spell
+set modeline
+set modelines=10
+set title
+set titleold="Terminal"
+set titlestring=%F
+set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)\
+set laststatus=2
+cnoreabbrev W! w!
+cnoreabbrev Q! q!
+cnoreabbrev Wq wq
+cnoreabbrev Wa wa
+cnoreabbrev wQ wq
+cnoreabbrev WQ wq
+cnoreabbrev W w
+cnoreabbrev Q q
+noremap YY "+y<CR>
+noremap PP "+p<CR>
+inoremap {<CR> {<CR>}<ESC>ko
+
+
+
+if ! has('gui_running')
+  set ttimeoutlen=10
+  augroup FastEscape
+    autocmd!
+    au InsertEnter * set timeoutlen=100
+    au InsertLeave * set timeoutlen=1000
+  augroup END
+endif
+
+"*****************************************************************************
+"" Autocmd Rules
+"*****************************************************************************
+"" The PC is fast enough, do syntax highlight syncing from start unless 200 lines
+augroup vimrc-sync-fromstart
+  autocmd!
+  autocmd BufEnter * :syntax sync maxlines=200
+augroup END
+
+"" Remember cursor position
+augroup vimrc-remember-cursor-position
+  autocmd!
+  autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+augroup END
+
+
