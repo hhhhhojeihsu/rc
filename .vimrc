@@ -180,9 +180,9 @@ let g:syntastic_python_checkers=['python', 'flake8']
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_cpp_compiler = 'clang++'
-let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++ -Wall -Wextra'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++ -Wall -Wextra - pedantic -Wshadow -Wconversion'
 let g:syntastic_c_compiler = 'clang'
-let g:syntastic_c_compiler_options = ' -Wall -Wextra -pedantic -Wshadow'
+let g:syntastic_c_compiler_options = ' -Wall -Wextra -pedantic -Wshadow -Wconversion'
 let g:syntastic_loc_list_height = 2
 let g:syntastic_auto_jump = 1
 nmap <silent> <F7> :SyntasticToggleMode<CR>
