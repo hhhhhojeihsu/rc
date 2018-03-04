@@ -123,6 +123,8 @@ Plugin 'Shougo/neocomplete.vim'
 Plugin 'frioux/vim-lost'
 Plugin 'sk1418/Join'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'wakatime/vim-wakatime'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
