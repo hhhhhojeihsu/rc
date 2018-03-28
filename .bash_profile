@@ -14,8 +14,8 @@ function PS1_settings {
 }
 PS1_settings
 
-alias ll='ls -alGF | less'
-alias ls='ls -GFh'
+alias ll='ls -alF | less'
+alias ls='ls -Fh'
 alias dir='ls'
 alias grep='grep --color=auto'
 alias cls='clear'
