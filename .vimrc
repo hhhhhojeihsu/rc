@@ -1,8 +1,8 @@
 "indent
 set ai
 set expandtab
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 
 "encoding
 set fileencodings=utf-8,big5
