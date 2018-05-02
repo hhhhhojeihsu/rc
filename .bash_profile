@@ -3,6 +3,7 @@ bind "set show-all-if-ambiguous on"
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 export TERM=screen-256color
+export EDITOR='/usr/bin/env vim'
 
 function PS1_settings {
 	local _user_and_host_="\[\033[1;36m\]\u\[\033[1;31m\]@\[\033[1;32m\]\h"
