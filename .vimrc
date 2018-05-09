@@ -27,7 +27,6 @@ set foldlevel=5
 "misc
 set cursorline
 set cursorcolumn
-set mouse=nv
 set ruler
 set number
 set showcmd
