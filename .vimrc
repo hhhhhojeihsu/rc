@@ -31,7 +31,6 @@ set ruler
 set number
 set showcmd
 set bomb
-set binary
 set ttyfast
 syntax on
 inoremap jk <ESC>
