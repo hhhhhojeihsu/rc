@@ -178,9 +178,9 @@ let g:syntastic_aggregate_errors = 1
 let g:syntastic_python_checkers=['python', 'flake8']
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-let g:syntastic_cpp_checkers=['clang_check']
+let g:syntastic_clangcheck_options = ' -std=c++11 -Wall -Wextra -Wshadow -Wconversion'
 let g:syntastic_cpp_compiler = 'clang++'
-let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++ -Wall -Wextra -pedantic -Wshadow -Wconversion'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -Wall -Wextra -Wshadow -Wconversion'
 let g:syntastic_c_compiler = 'clang'
 let g:syntastic_c_compiler_options = ' -Wall -Wextra -pedantic -Wshadow -Wconversion'
 let g:syntastic_loc_list_height = 2
