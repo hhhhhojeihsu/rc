@@ -121,6 +121,7 @@ Plugin 'frioux/vim-lost'
 Plugin 'sk1418/Join'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'wakatime/vim-wakatime'
+Plugin 'easymotion/vim-easymotion'
 
 
 " All of your Plugins must be added before the following line
@@ -303,4 +304,18 @@ endif
 "vim-easy-align
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
+
+"vim-easymotion
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+
+" Jump to anywhere you want with minimal keystrokes, with just one key binding.
+" `s{char}{label}`
+nmap s <Plug>(easymotion-overwin-f)
+
+" Turn on case-insensitive feature
+let g:EasyMotion_smartcase = 1
+
+" JK motions: Line motions
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
 
