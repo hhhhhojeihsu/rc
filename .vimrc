@@ -120,7 +120,6 @@ Plugin 'Shougo/neocomplete.vim'
 Plugin 'frioux/vim-lost'
 Plugin 'sk1418/Join'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'wakatime/vim-wakatime'
 Plugin 'easymotion/vim-easymotion'
 
 
