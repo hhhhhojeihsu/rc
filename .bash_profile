@@ -22,3 +22,7 @@ alias dir='ls'
 alias grep='grep --color=auto'
 alias cls='clear'
 alias tmux='tmux -2'
+
+export FZF_CTRL_T_COMMAND='fdfind --type d --max-depth 3 --hidden --follow --exclude ".git"'
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

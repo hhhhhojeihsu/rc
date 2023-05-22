@@ -28,6 +28,10 @@ for config in ${configs}; do
   fi
 done
 
+# Append .bash_profile to .bashrc
+cat ${HOME}/.bash_profile >> ${HOME}/.bashrc
+rm ${HOME}/.bash_profile
+
 #test if Vundle installed
 if [ ! -d "${HOME}/.vim/bundle/Vundle.vim" ]; then
   git clone https://github.com/VundleVim/Vundle.vim.git ${HOME}/.vim/bundle/Vundle.vim
@@ -46,3 +50,5 @@ fi
 #source .tmux.conf
 tmux source ${HOME}/.tmux.conf
 
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
