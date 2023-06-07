@@ -277,3 +277,6 @@ map <Leader>k <Plug>(easymotion-k)
 
 map <Leader>e :FZF -m<Cr>
 map <Leader>p :CtrlPBuffer<Cr>
+
+"Ctrlp
+let g:ctrlp_match_window = 'min:4,max:999'
