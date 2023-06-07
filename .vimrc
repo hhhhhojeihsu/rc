@@ -120,6 +120,7 @@ Plugin 'sk1418/Join'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'junegunn/fzf'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 
 " All of your Plugins must be added before the following line
@@ -275,4 +276,4 @@ map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 
 map <Leader>e :FZF -m<Cr>
-
+map <Leader>p :CtrlPBuffer<Cr>
