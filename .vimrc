@@ -1,3 +1,5 @@
+set hidden
+
 "indent
 set ai
 set expandtab
@@ -120,7 +122,7 @@ Plugin 'sk1418/Join'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'junegunn/fzf'
-Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'junegunn/fzf.vim'
 
 
 " All of your Plugins must be added before the following line
@@ -276,7 +278,4 @@ map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 
 map <Leader>e :FZF -m<Cr>
-map <Leader>p :CtrlPBuffer<Cr>
-
-"Ctrlp
-let g:ctrlp_match_window = 'min:4,max:999'
+map <Leader>p :Buffers!<Cr>
