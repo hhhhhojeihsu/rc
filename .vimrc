@@ -39,6 +39,7 @@ inoremap aa <C-n>
 nmap <s-tab> v<
 set backspace=indent,eol,start
 autocmd FileType markdown setlocal spell
+au FileType markdown let g:indentLine_setConceal= 0
 set modeline
 set modelines=10
 set title
